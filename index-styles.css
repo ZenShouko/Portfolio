@@ -1,0 +1,92 @@
+.body-wrapper{
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: start;
+    cursor: default;
+}
+
+.me-section{
+    margin-top: 4em;
+    margin-inline: 2em;
+    display: flex;
+    column-gap: 6em;
+    row-gap: 2em;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.3);
+    flex-wrap: wrap;
+    background-color: #f5f4ff;
+    border-radius: 10px;
+    padding: 4em;
+    overflow: hidden;
+}
+.me-section a{
+    text-shadow: 1px 1px black;
+}
+
+.welkom-paragraph{
+    font-size: 100px;
+    font-weight: 600;
+}
+.naam-paragraph{
+    font-size: 60px; !important;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    width: 20em;
+}
+
+.image-container img{
+    display: inline-block;
+    width: 20em; height: 20em;
+    object-fit: cover;
+    object-position: top;
+    horiz-align: center;
+    border-radius: 200px;
+    box-shadow: 0 0 4px 0.1vw rgba(0, 0, 0, 0.35);
+    /*border: 1px solid #322F3D;*/
+}
+
+.language-card-container{
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.language-card{
+    padding: 0.25em;
+    border: 0.1em solid #433f60;
+    width: 4rem;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 250ms, color 250ms;
+}
+.language-card:hover{
+    background: #222831;
+    color: mediumspringgreen;
+}
+
+@media (max-width: 780px){
+    .me-section{
+        padding: 2em;
+    }
+    .image-container img{
+        width: 14em; height: 14em;
+    }
+    .welkom-paragraph{
+        font-size: 60px;
+    }
+    .naam-paragraph{
+        font-size: 36px;
+    }
+}
