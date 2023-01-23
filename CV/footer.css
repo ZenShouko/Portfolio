@@ -1,0 +1,16 @@
+footer{
+    background-image: linear-gradient(to bottom, #171717, #0e0e0e);
+    display: flex;
+    /*justify-content: space-between;*/
+    flex-wrap: wrap;
+    padding: 1em 2em;
+    border-radius: 8px;
+    color: #dedede;
+}
+footer * {
+    margin: 0 auto;
+}
+footer a{
+    color: #9f72b0;
+    font-weight: bold;
+}

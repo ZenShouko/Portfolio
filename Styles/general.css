@@ -4,6 +4,10 @@
     text-shadow: 1px 1px #dedede;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 h1, h2, h3, h4, h5, p, a{
     margin: 0;
 }
@@ -18,3 +22,12 @@ body{
     padding: 0;
 }
 
+@keyframes FlyUp {
+    0%{
+        transform: translateY(1.5em);
+    }
+
+    100%{
+        transform: none;
+    }
+}

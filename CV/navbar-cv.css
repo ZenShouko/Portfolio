@@ -1,0 +1,11 @@
+header{
+    display: flex;
+    justify-content: end;
+}
+.navbar{
+    margin: 10px 1em;
+}
+
+.navbar button{
+    margin: 0;
+}

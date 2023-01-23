@@ -1,0 +1,28 @@
+--NEW
+body-background-color:
+#EDEEF7
+
+Section-color:
+#f5f4ff
+box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.3);
+
+Section Text Color:
+#433f60
+
+Navbar-color:
+#222831
+
+Animation:
+*For the container:
+animation: FlyUp 850ms cubic-bezier(0.68, -0.6, 0.32, 1.6);
+
+*Keyframes
+@keyframes FlyUp {
+    0%{
+        transform: translateY(3em);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}

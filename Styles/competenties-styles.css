@@ -10,6 +10,7 @@
     left: 0; right: 0;
     justify-content: center;
     align-items: center;
+    margin-top: 1em;
 }
 
 .wrapper h1{
@@ -22,6 +23,7 @@
     box-shadow: 1px 1px 0 1px black;
     margin-bottom: 1em;
     margin-inline: 0.5em;
+    animation: FlyUp 850ms;
 }
 
 .competenties-container{ 
@@ -57,14 +59,25 @@
     margin: 0.5em 1em 1em 1em;
 }
 .ontwerper-container{
+    transform: translateY(1.5em);
+    animation: FlyUp 850ms 200ms forwards;
 }
 .programmeur-container{
+    transform: translateY(1.5em);
+    animation: FlyUp 850ms 300ms forwards;
 }
 .tester-container{
+    transform: translateY(1.5em);
+    animation: FlyUp 850ms 400ms forwards;
 }
 .communicator-container{
+    transform: translateY(1.5em);
+    animation: FlyUp 850ms 500ms forwards;
 }
 .it-professional-container{
+    transform: translateY(1.5em);
+    animation: FlyUp 850ms 600ms forwards;
+    margin-bottom: 2em;
 }
 
 .title-container{
@@ -155,7 +168,7 @@
     .programmeur-container,
     .tester-container,
     .communicator-container,
-    .it-professional-container{ border: 1px solid red;
+    .it-professional-container{
         flex-basis: fit-content; !important;
         min-width: auto;
     }

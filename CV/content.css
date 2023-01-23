@@ -1,0 +1,339 @@
+.content-container{
+    margin-left: 31%;
+    display: flex; flex-direction: column;
+    width: 1fr;
+}
+@media (max-width: 900px){
+    .content-container{
+        margin-left: 0
+    }
+
+    .sidebar-container{
+        display: none;
+    }
+}
+@media (min-width: 900px){
+    .mijn-foto-container img{
+        display: none;
+    }
+    footer{
+        margin-left: 30%;
+    }
+}
+@media (min-width: 1080px){
+    .content-container{
+        margin-left: 20.2rem;
+    }
+    footer{
+        margin-left: 20.2rem;
+    }
+}
+
+h3, h4, p{
+    margin: 0;
+}
+.content-container h3{
+    color: #9f72b0;
+    text-shadow: 1px 1px #111111;
+    font-size: 20px;
+}
+.title-separator{
+    height: 1px; width: 99%;
+    background-color: #9891be;
+    margin: 4px auto;
+    opacity: 0.2;
+}
+.splitter{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+    justify-content: space-between;
+    margin: 0 0 4px 0;
+    font-size: 1.2em;
+}
+.content-container .title{
+    color: #dedede;
+    font-size: 3em;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    text-shadow: 1px 0 1px gray;
+    width: 100%;
+}
+
+/*Default styles for blocks*/
+.mijn-foto-container,
+.aboutme-opleidingen-wrapper,
+.personalia-container,
+.talen-hobbies-section,
+.werkervaring-container,
+.mijn-projecten-container{
+    background-color: #1f1f1f;
+    color: #dedede;
+    box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin: 1em 1em 0.5em 1em;
+    padding: 1em;
+}
+
+/*Mijn-foto*/
+.mijn-foto-container{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.mijn-foto-container a{
+    color: lightpink;
+}
+.mijn-foto-container img {
+    width: 60vw;
+    max-width: 320px;
+    margin: 1em auto 0 auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: box-shadow 250ms, border 250ms;
+}
+.mijn-foto-container a img:hover{
+    box-shadow: 3px 3px 8px 4px rgb(0, 0, 0, 0.8);
+}
+.mijn-foto-container a img:active{
+    border: 4px solid #664a72;
+    box-shadow: none;
+}
+.mijn-foto-container h2{
+    margin: 1rem auto 0 auto;
+}
+.mijn-foto-container p{
+    margin: 0 0 1em 0;
+}
+
+/*About me wrapper*/
+.aboutme-opleidingen-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2em;
+    justify-content: space-between;
+    margin: 1em 1em 0.5em 1em; padding: 1em;
+    box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+/*Over mij sectie*/
+.about-me{
+    display: flex; flex-direction: column;
+    vertical-align: top;
+}
+
+.about-me p{
+    margin: 0;
+}
+
+/*opleidingen& competenties*/
+.opleidingen-competenties-container{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1em; column-gap: 3vw;
+    padding: 0 1em;
+}
+
+/*Opleidingen*/
+.opleidingen-container{
+    display: flex; flex-direction: column;
+}
+.opleidingen-container:last-of-type h3{
+    margin-top: 10px;
+}
+.opleidingen-description-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.opleidingen-description-container div{
+    margin: 0.2em 0 0.5em 0;
+}
+.opleidingen-container p{
+    margin: 0;
+}
+.opleiding-jaar{
+    color: #bb86fc;
+}
+
+/*Personalia*/
+.personalia-container{
+
+}
+.personalia-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.personalia-item{
+    display: flex; flex-direction: column;
+    align-self: center;
+    width: 200px;
+    padding: 2px;
+    margin: 0.5em 0.25em;
+    box-shadow: 0 0 10px 2px rgba(44, 44, 44, 0.5);
+    border-radius: 8px;
+    transition: box-shadow 300ms;
+}
+.personalia-item:hover{
+    box-shadow: 0 0 10px 4px rgba(63, 63, 63, 0.5);
+}
+.personalia-left-p{
+    font-weight: 500;
+}
+.personalia-right-p{
+    margin: auto 0.5vw;
+}
+
+/*Werkervaring*/
+.werkervaring-container{
+
+}
+.werkervaring-datum{
+    color: #112450;
+    font-weight: bold;
+    font-size: 0.8em; !important;
+}
+.ervaringen-grid{
+    margin-top: 1.2em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+    flex-grow: 1;
+}
+.ervaringen-grid h4{
+    flex-grow: 1;
+    text-wrap: normal;
+    width: 90%;
+}
+.ervaring-container{
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    padding: 1.5vw;
+    border: 2px solid black;
+    transition: border 300ms;
+    width: max(20vw, 220px); flex: 1;
+}
+.ervaring-container:hover{
+    border: 2px solid #4d4d4d;
+}
+.ervaring-plaats{
+    font-size: 24px;!important;
+    font-weight: bold;
+}
+button{
+    background: white; color: black;
+    font-weight: 500;
+    border: none;
+    padding: 8px 14px;
+    margin: 1em auto 0 auto;
+    border-radius: 10em;
+    cursor: pointer;
+    transition: background-color 300ms, box-shadow 300ms;
+}
+button:hover{
+    background: #efe9ff;
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
+}
+button:active{
+    background: #b8b4c7;
+}
+/*Colors for cells*/
+.color1{
+    /*background-image: linear-gradient(to bottom, #514e60, #514e60);*/
+    background-image: linear-gradient(to bottom, #664a72, #513c5b);
+    color: whitesmoke;
+}
+.color1 .werkervaring-datum{
+    /*color: #b4a8c9;*/
+    color: #ffeff9;
+}
+
+.color2{
+    /*background-image: linear-gradient(to bottom, #3c384c, #3c384c);*/
+    background-image: linear-gradient(to bottom, #3F3B6C, #36325d);
+}
+.color2 .werkervaring-datum{
+    /*color: #c7bed7;*/
+    color: #f7fff6;
+}
+
+/*Talen& Hobbies*/
+.talen-hobbies-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2em;
+}
+
+.taal-item{
+    display: flex;
+    align-items: center;
+    margin: 0.5em 0;
+    box-shadow: 0 1px 1px 1px rgba(86, 86, 86, 0.3);
+    border-radius: 4px;
+    padding: 2px;
+    width: fit-content;
+    /*Transition werkt niet tijdens testen??*/
+    -webkit-transition: background-image 300ms;
+}
+.taal-item:hover{
+    background-image: linear-gradient(to bottom, #232323, #2c2c2c);
+}
+.taal-item p{
+    width: 100px;
+}
+.taal-score-container{
+    display: flex;
+    flex: 1;
+    margin-left: 0.5em;
+}
+.dot-1{
+    margin: auto 2px;
+    flex-basis: auto;
+    height: 20px; width: 20px;
+    border: 1px solid dimgray;
+    border-radius: 50px;
+    background-color: #282828;
+}
+.dot-2{
+    margin: auto 2px;
+    flex-basis: auto;
+    height: 20px; width: 20px;
+    border: 1px solid dimgray;
+    border-radius: 50px;
+    background-image: linear-gradient(to bottom, #bb86d0, #9f72b0);
+}
+.dot-3{
+    margin: auto 2px;
+    flex-basis: auto;
+    height: 20px; width: 20px;
+    border: 1px solid dimgray;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #664a72, #282828);
+}
+
+.hobbies-container li:last-child{
+    margin-top: 1em;
+}
+.hobby-description{
+    font-size: 15px;
+}
+
+/*Mijn projecten*/
+.mijn-projecten-container{
+
+}
+.mijn-projecten-container a{
+    display: block;
+}
+.mijn-projecten-container button{
+    min-width: 200px;
+}
+.my-projects-button-container{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1em;
+}
