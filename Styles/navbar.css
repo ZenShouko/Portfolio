@@ -8,12 +8,18 @@
     color: white;
     border-radius: 6px;
     -webkit-transition: box-shadow 200ms;
-    animation: ShowUp 1000ms 300ms backwards;
+    animation: ShowUp 1000ms backwards;
 }
 
 @keyframes ShowUp {
     0%{
-        transform: translateY(-150%) scale(0.9);
+        transform: none;
+    }
+    50%{
+        transform: translateY(-6%) scale(1.05);
+    }
+    54%{
+        transform: translateY(-6%) scale(1.05);
     }
     100%{
         transform: none;
