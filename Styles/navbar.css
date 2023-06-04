@@ -16,10 +16,10 @@
         transform: none;
     }
     50%{
-        transform: translateY(-6%) scale(1.05);
+        transform: translateY(-2%) scale(0.99);
     }
     54%{
-        transform: translateY(-6%) scale(1.05);
+        transform: translateY(-2%) scale(0.99);
     }
     100%{
         transform: none;
